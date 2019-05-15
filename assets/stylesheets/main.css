@@ -47,6 +47,14 @@ nav.nav-font ul > li {
     height: 70px;
 }
 
+.fleximages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
 
 time.icon
 {
