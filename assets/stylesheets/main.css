@@ -21,6 +21,15 @@ nav.nav-center ul > li {
   font-family: Times New Roman;
 }
 
+nav.nav-font ul > li {
+  font-family: 'Libre Baskerville' , serif;
+  font-size: 26px;
+}
+
+.formatted {
+  font-family: 'Libre Baskerville' , serif;
+  font-size: 12px;
+}
 .bottomaligned {
     display: flex;
     flex-direction: row;
