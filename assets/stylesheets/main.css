@@ -12,13 +12,13 @@ img.right {float: right;}
 button {border: none;}
 
 nav.nav-center ul {
-  transform: translateX(32%);
-  webkit-transform: translateX(-32%);
+  /* center the nav bar */
+  transform: translateX(37%);
+  webkit-transform: translateX(-37%);
 }
-
-
 nav.nav-center ul > li {
-  font-family: Times New Roman;
+  font-family: 'Libre Baskerville' , serif;
+  font-size: 26px;
 }
 
 nav.nav-font ul > li {
