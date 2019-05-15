@@ -21,9 +21,19 @@ nav.nav-center ul > li {
   font-family: Times New Roman;
 }
 
-.container.section {
-  margin-bottom:10px;
+.bottomaligned {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
 }
+
+.flex-item {
+    width: 100px;
+    height: 70px;
+}
+
 
 time.icon
 {
@@ -34,7 +44,7 @@ time.icon
   height: 5em;
   border-style: solid;
   border-width: thin;
-  border-color: #795548;
+  border-color: #795548; /* materializecss brown */
   overflow: hidden;
 }
 
