@@ -10,3 +10,63 @@ img.fullscreen {
 img.right {float: right;}
 
 button {border: none;}
+
+nav.nav-center ul {
+  transform: translateX(32%);
+  webkit-transform: translateX(-32%);
+}
+
+
+nav.nav-center ul > li {
+  font-family: Times New Roman;
+}
+
+.container.section {
+  margin-bottom:10px;
+}
+
+time.icon
+{
+  font-size: 1em; /* change icon size */
+  display: block;
+  position: absolute;
+  width: 5em;
+  height: 5em;
+  border-style: solid;
+  border-width: thin;
+  border-color: #795548;
+  overflow: hidden;
+}
+
+time.icon *
+{
+  display: block;
+  width: 100%;
+  font-size: 1em;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+}
+
+time.icon strong
+{
+  position: absolute;
+  top: 0;
+  padding: 0.4em 0;
+  color: #fff;
+}
+
+time.icon em
+{
+  position: absolute;
+  bottom: 0.3em;
+  color: #fd9f1b;
+}
+
+time.icon span
+{
+  font-size: 2.3em;
+  letter-spacing: -0.05em;
+  padding-top: 0.8em;
+  color: #2f2f2f;
+}
