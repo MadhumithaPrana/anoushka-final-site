@@ -11,6 +11,10 @@ img.right {float: right;}
 
 button {border: none;}
 
+nav ul li.active a {
+  color: #ef5350; /* materializecss red lighten-1 */
+}
+
 nav.nav-center ul {
   /* center the nav bar */
   transform: translateX(37%);
