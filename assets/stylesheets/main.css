@@ -93,3 +93,12 @@ time.icon span
   padding-top: 0.8em;
   color: #2f2f2f;
 }
+
+.card-small {
+  width: 500px;
+  height: 80px;
+}
+
+.card-font {
+    font-size: 15px !important;
+}
