@@ -24,7 +24,22 @@
     </div>
 </nav>
 
-<img class="fullscreen" id="" src="assets/images/home/main.png">
+
+ <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="assets/images/home/main.png">
+      </li>
+      <li>
+        <img src="assets/images/home/2.png">
+      </li>
+      <li>
+        <img src="assets/images/home/3.png">
+      </li>
+    </ul>
+</div>
+
+
 
 <footer class="page-footer grey darken-4">
     <div class="footer-copyright">
@@ -35,7 +50,14 @@
 </footer>
 
 
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    $('.slider').slider({height:1000, interval:5000, duration:1000});
+  });
+</script>
 
 </body>
 </html>
