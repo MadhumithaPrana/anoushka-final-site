@@ -110,3 +110,7 @@ time.icon span
 .card-font {
     font-size: 15px !important;
 }
+
+.hide {
+  display:none;
+}

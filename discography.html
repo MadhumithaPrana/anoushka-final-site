@@ -55,13 +55,13 @@
 
 <div class="carousel" id="carousel">
   <ul>
-    <li>
+    <li id="album-1" class="album-cover">
       <img src="assets/images/discography/ca1.png">
     </li>
-    <li>
+    <li id="album-2" class="album-cover">
       <img src="assets/images/discography/la1ra2.png">
     </li>
-    <li>
+    <li id="album-3" class="album-cover">
       <img src="assets/images/discography/ra1.png">
     </li>
     <img src="assets/images/left.png" class="left">
@@ -80,7 +80,9 @@
 <div class="row">
    <div class="col s6">
 
-  <iframe src="https://open.spotify.com/embed/album/4zPcbxBEKkZDEjsdbQoEJi" width="500" height="500" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+  <iframe id="album1-fm" src="https://open.spotify.com/embed/album/4zPcbxBEKkZDEjsdbQoEJi" width="500" height="500" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<iframe id="album2-fm" class="hide" src="https://open.spotify.com/embed/album/1PLFjFH557aoApbm2t9OtZ" width="500" height="500" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<iframe id="album3-fm" class="hide" src="https://open.spotify.com/embed/album/3JhWoZyK2xTHTbwVXyaleq" width="500" height="500" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 </div>
 
 
@@ -174,6 +176,12 @@ $('.carousel').carousel({
   distance: 300
 
 });
+
+$(document).ready(function() {
+  $('.album-cover').on('click', function(){
+    console.log($(this).attr('id'));
+  });
+})
 
 </script>
 
