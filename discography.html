@@ -81,8 +81,8 @@
    <div class="col s6">
 
   <iframe id="album1-fm" src="https://open.spotify.com/embed/album/4zPcbxBEKkZDEjsdbQoEJi" width="500" height="500" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-<iframe id="album2-fm" class="hide" src="https://open.spotify.com/embed/album/1PLFjFH557aoApbm2t9OtZ" width="500" height="500" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-<iframe id="album3-fm" class="hide" src="https://open.spotify.com/embed/album/3JhWoZyK2xTHTbwVXyaleq" width="500" height="500" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<iframe id="album2-fm" class="hide" src="https://open.spotify.com/embed/album/3JhWoZyK2xTHTbwVXyaleq" width="500" height="500" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<iframe id="album3-fm" class="hide" src="https://open.spotify.com/embed/album/1PLFjFH557aoApbm2t9OtZ" width="500" height="500" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 </div>
 
 
@@ -178,8 +178,33 @@ $('.carousel').carousel({
 });
 
 $(document).ready(function() {
-  $('.album-cover').on('click', function(){
-    console.log($(this).attr('id'));
+  $('.left').on('click', function(){
+    var currentIndex = $('.carousel').data('index');
+    for (var index = 0; index < 3; index = index + 1) {
+      var id = 'album' + (index+1) + '-fm';
+      if (index == currentIndex) {
+        // show current album
+        $('#' + id).removeClass("hide");
+      } else {
+        // hide current album
+        $('#' + id).addClass('hide');
+      }
+
+    }
+  });
+  $('.right').on('click', function(){
+    var currentIndex = $('.carousel').data('index');
+    for (var index = 0; index < 3; index = index + 1) {
+      var id = 'album' + (index+1) + '-fm';
+      if (index == currentIndex) {
+        // show current album
+        $('#' + id).removeClass("hide");
+      } else {
+        // hide current album
+        $('#' + id).addClass('hide');
+      }
+
+    }
   });
 })
 
