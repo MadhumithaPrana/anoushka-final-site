@@ -1,6 +1,100 @@
 
 body {background-color: black;}
 
+
+.logo {
+    margin:0;
+    padding:20px;
+}
+
+
+.navigation nav {
+  display: flex;
+  justify-content: center;
+
+  border:1px solid #ccc;
+  border-width:1px 0;
+  background-color: #000000;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 22px;
+}
+
+nav.ul {
+  display: flex;
+  flex-flow: row wrap;
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+nav.li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+nav.li a:hover {
+  background-color: #ffffff;
+}
+
+
+nav.li a:active {
+  background-color: #ffffff;
+}
+
+.overlay {
+    position: relative;
+}
+
+.totheright {
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  transform: translate(-10%, -50%);
+  text-align: left;
+}
+
+.textfont {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 16px;
+  padding:20px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.peachylight {
+  background-color: #ffcdd2;
+}
+
+.peachy {
+  background-color: #ef9a9a;
+}
+
+.sideys {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+  padding:20px;
+  background-color: #ef9a9a;
+}
+
+.sideys-item-1 {
+    width: 30%;
+    margin: auto;
+}
+
+.sideys-item-2 {
+    width: 70%;
+    margin: auto;
+
 img.fullscreen {
   display:block;
   width:100%; height:100%;
@@ -11,19 +105,6 @@ img.right {float: right;}
 
 button {border: none;}
 
-nav ul li.active a {
-  color: #ef5350; /* materializecss red lighten-1 */
-}
-
-nav.nav-center ul {
-  /* center the nav bar */
-  transform: translateX(37%);
-  webkit-transform: translateX(-37%);
-}
-nav.nav-center ul > li {
-  font-family: 'Libre Baskerville' , serif;
-  font-size: 26px;
-}
 
 nav.nav-font ul > li {
   font-family: 'Libre Baskerville' , serif;
@@ -105,6 +186,7 @@ time.icon span
 .card-small {
   width: 500px;
   height: 80px;
+background-color: #473607
 }
 
 .card-font {
@@ -113,4 +195,10 @@ time.icon span
 
 .hide {
   display:none;
+}
+
+.merchbox {
+  width : 500px;
+  height: 600px !important;
+  background-color: #070606
 }
