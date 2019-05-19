@@ -195,7 +195,15 @@ background-color: #473607
 }
 
 .merchbox {
-  width : 500px;
-  height: 600px !important;
-  background-color: #070606
+width : 500px;
+  height: 500px;
+  background-color: #070606;
+  align-self: center;
+  justify-self: center;
+}
+
+.merchgrid {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(2, 1fr);
 }
