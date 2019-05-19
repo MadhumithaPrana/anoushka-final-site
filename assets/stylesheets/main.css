@@ -124,17 +124,13 @@ nav.nav-font ul > li {
     align-items: baseline;
 }
 
-.flex-item {
-    width: 100px;
-    height: 70px;
+.gridimg {
 }
 
-.fleximages {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: baseline;
+.imagegrid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 
