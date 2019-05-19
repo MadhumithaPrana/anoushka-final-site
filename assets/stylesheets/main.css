@@ -116,12 +116,15 @@ nav.nav-font ul > li {
   font-family: 'Libre Baskerville' , serif;
   font-size: 12px;
 }
-.bottomaligned {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: baseline;
+
+.formatted-medium {
+  font-family: 'Libre Baskerville' , serif;
+  font-size: 16px;
+}
+
+.formatted-large {
+  font-family: 'Libre Baskerville' , serif;
+  font-size: 26px;
 }
 
 .gridimg {
@@ -133,6 +136,50 @@ nav.nav-font ul > li {
   grid-template-columns: repeat(3, 1fr);
 }
 
+table{
+  table-layout:fixed;
+}
+
+.tablerow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.tableitem-1 {
+    width: 15%;
+    height: 70px;
+}
+
+
+.tableitem-2 {
+    width: 70%;
+    height: 70px;
+  font-size: 28px;
+}
+
+
+.tableitem-3 {
+    width: 15%;
+    height: 70px;
+  font-size: 20px;
+}
+
+.tickets {
+    background-color: black;
+}
+
+tr {
+    border-bottom: 1px solid #795548; /* materializecss brown */;
+}
+
+td {
+    text-align: center;
+    vertical-align: bottom;
+  font-family: 'Libre Baskerville' , serif;
+}
 
 time.icon
 {
@@ -144,6 +191,7 @@ time.icon
   border-style: solid;
   border-width: thin;
   border-color: #795548; /* materializecss brown */
+  background-color: rgba(62, 39, 35, 0.6);
   overflow: hidden;
 }
 
@@ -163,6 +211,7 @@ time.icon strong
   top: 0;
   padding: 0.4em 0;
   color: #fff;
+  font-size: 1.3em;
 }
 
 time.icon em
@@ -177,7 +226,7 @@ time.icon span
   font-size: 2.3em;
   letter-spacing: -0.05em;
   padding-top: 0.8em;
-  color: #2f2f2f;
+  color: #bfbfbf;
 }
 
 .card-small {
