@@ -157,18 +157,35 @@ table{
 .tableitem-2 {
     width: 70%;
     height: 70px;
-  font-size: 26px;
+  font-size: 22px;
 }
 
 
 .tableitem-3 {
     width: 15%;
     height: 70px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .tickets {
-    background-color: black;
+    background-color: black !important;
+}
+
+.showmore-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 60px;
+}
+
+.showmore {
+  height: 5em;
+  width: 10em;
+  border-style: solid;
+  border-width: thin;
+  border-color: #795548; /* materializecss brown */
+  background-color: rgba(62, 39, 35, 0.6) !important;
+  font-family: 'Libre Baskerville' , serif;
+  font-size: 24px;
 }
 
 tr {
