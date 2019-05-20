@@ -143,6 +143,39 @@ nav.nav-font ul > li {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.disco-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin: 30px;
+  width: 500px;
+  height: 80px;
+background-color: #473607
+}
+
+.disco-card-item-1 {
+    align-self: left;
+    font-size: 15px !important;
+}
+
+.disco-card-item-2 {
+    align-self: right;
+}
+
+
+.card-small {
+  width: 500px;
+  height: 80px;
+background-color: #473607
+}
+
+.card-font {
+    font-size: 15px !important;
+}
+
 table{
   table-layout:fixed;
 }
@@ -257,15 +290,6 @@ time.icon span
   color: #bfbfbf;
 }
 
-.card-small {
-  width: 500px;
-  height: 80px;
-background-color: #473607
-}
-
-.card-font {
-    font-size: 15px !important;
-}
 
 .hide {
   display:none;
