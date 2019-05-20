@@ -70,6 +70,14 @@ nav.li a:active {
   font-style: italic;
 }
 
+.albumtitle {
+    float: left;
+}
+
+.albumreleased {
+    float: right;
+}
+
 .peachylight {
   background-color: #ffcdd2;
 }
@@ -87,12 +95,11 @@ nav.li a:active {
 }
 
 .sideys-item-1 {
-    width: 30%;
     margin: auto;
 }
 
 .sideys-item-2 {
-    width: 70%;
+    width: 60%;
     margin: auto;
 }
 
