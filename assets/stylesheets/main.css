@@ -188,6 +188,10 @@ table{
   font-size: 24px;
 }
 
+button {
+    cursor: pointer;
+}
+
 tr {
     border-bottom: 1px solid #795548; /* materializecss brown */;
 }
