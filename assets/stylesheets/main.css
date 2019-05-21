@@ -293,19 +293,20 @@ time.icon span
 }
 
 .merchbox {
-width : 600px;
-  height: 600px;
+  width:500px;
+  height:500px;
   background-color: #070606;
-  align-self: center;
   justify-self: center;
   border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .merchgrid {
   display: grid;
-  grid-gap: 40px;
   grid-template-columns: repeat(2, 1fr);
-  border: 1px solid white;
+  grid-column-gap: 0 !important;
 }
 
 /* Dropdown Button */
