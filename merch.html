@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="assets/stylesheets/main.css">
   <link rel="stylesheet"
          href="https://fonts.googleapis.com/css?family=Libre+Baskerville">
+
 </head>
 <body>
 <!-- HTML COMMENT -->
@@ -31,42 +32,55 @@
         <img id="" src="assets/images/merch/main.png">
     </div>
 
+
+<div class="mydropdown">
+  <button class="dropbtn">Category</button>
+  <div id="myDropdown" class="mydropdown-content">
+    <a href="#about" id="mydropdown-cds">CDs and Records</a>
+    <a href="#base" id="mydropdown-goodies">Goodies</a>
+  </div>
+</div>
 <br>
 <br>
 <br>
 <br>
+
+// Helpful links
+// https://codepen.io/mary_pieroszkiewicz/pen/owGzBz
+
 <div class="merchgrid">
-      <div class="merchbox">
+      <div class="merchbox cds">
       </div>
 
-      <div class="merchbox">
+      <div class="merchbox cds">
       <img src="assets/images/merch/1_cd.png">
       </div>
-      <div class="merchbox">
+      <div class="merchbox cds">
       <img src="assets/images/merch/2_cd.png">
       </div>
-      <div class="merchbox">
+      <div class="merchbox cds">
       <img src="assets/images/merch/3_cd.png">
       </div>
-      <div class="merchbox">
+      <div class="merchbox cds">
       <img src="assets/images/merch/4_cd.png">
       </div>
-      <div class="merchbox">
+      <div class="merchbox cds">
       <img src="assets/images/merch/5_cd.png">
       </div>
-      <div class="merchbox">
+      <div class="merchbox goodies">
 
       </div>
-      <div class="merchbox">
+      <div class="merchbox goodies">
       <img src="assets/images/merch/1_sh.png">
       </div>
-      <div class="merchbox">
+      <div class="merchbox goodies">
       <img src="assets/images/merch/2_sh.png">
       </div>
-      <div class="merchbox">
+      <div class="merchbox goodies">
       <img src="assets/images/merch/3_sh.png">
       </div>
     </div>
+
 
 
 <footer class="page-footer black">
@@ -81,6 +95,24 @@
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script>
+$(document).ready(function() {
+  $('.dropbtn').on('click', function(){
+    $("#myDropdown").toggleClass("show");
+  });
+  $('#mydropdown-cds').on('click', function(){
+    $(".goodies").addClass("hide");
+    $(".cds").removeClass("hide");
+  });
+  $('#mydropdown-goodies').on('click', function(){
+    $(".goodies").removeClass("hide");
+    $(".cds").addClass("hide");
+  });
+});
+</script>
 
 </body>
 </html>
