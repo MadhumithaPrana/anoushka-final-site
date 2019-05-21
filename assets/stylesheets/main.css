@@ -306,22 +306,25 @@ time.icon span
 .merchgrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 0 !important;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
 }
 
 /* Dropdown Button */
 .dropbtn {
-  background-color: #4CAF50;
-  color: white;
+  background-color: black;
+  color: lightgray;
   padding: 16px;
   font-size: 16px;
   border: none;
   cursor: pointer;
+  font-family: 'Libre Baskerville' , serif;
+  font-size: 24px;
 }
 
 /* Dropdown button on hover & focus */
 .dropbtn:hover, .dropbtn:focus {
-  background-color: #3e8e41;
+  background-color: black;
 }
 
 
@@ -335,20 +338,23 @@ time.icon span
 .mydropdown-content {
   display: none;
   position: absolute;
-  background-color: green;
+  background-color: black;
   min-width: 230px;
-  border: 1px solid #ddd;
+  font-family: 'Libre Baskerville' , serif;
+  font-size: 16px;
+  border: 1px solid grey;
 }
 
 /* Links inside the dropdown */
 .mydropdown-content a {
-  color: white;
+  color: lightgray;
   padding: 12px 16px;
   display: block;
+  border: 1px solid grey;
 }
 
 /* Change color of dropdown links on hover */
-.mydropdown-content a:hover {background-color: #f1f1f1}
+.mydropdown-content a:hover {background-color: black}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
