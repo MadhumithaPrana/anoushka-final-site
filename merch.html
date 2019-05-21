@@ -34,10 +34,10 @@
 
 
 <div class="mydropdown">
-  <button class="dropbtn">Category</button>
+  <button class="dropbtn italic">Category</button>
   <div id="myDropdown" class="mydropdown-content">
-    <a href="#about" id="mydropdown-cds">CDs and Records</a>
-    <a href="#base" id="mydropdown-goodies">Goodies</a>
+    <a href="#about" id="mydropdown-cds">CDs and Records (5)</a>
+    <a href="#base" id="mydropdown-goodies">Goodies (3)</a>
   </div>
 </div>
 <br>
@@ -100,6 +100,7 @@
 
 <script>
 $(document).ready(function() {
+  $("#myDropdown").toggleClass("show");
   $('.dropbtn').on('click', function(){
     $("#myDropdown").toggleClass("show");
   });
