@@ -36,8 +36,9 @@
 <div class="mydropdown">
   <button class="dropbtn italic">Category</button>
   <div id="myDropdown" class="mydropdown-content">
-    <a href="#about" id="mydropdown-cds">CDs and Records (5)</a>
-    <a href="#base" id="mydropdown-goodies">Goodies (3)</a>
+    <a href="#cds" id="mydropdown-cds">CDs and Records (5)</a>
+    <a href="#goodies" id="mydropdown-goodies">Goodies (3)</a>
+    <a href="#all" id="mydropdown-all">Everything (8)</a>
   </div>
 </div>
 <br>
@@ -50,6 +51,7 @@
 
 <div class="merchgrid">
       <div class="merchbox cds">
+          <span class="grey-text text-lighten-1 formatted-huge italic">CDs and Records</span>
       </div>
 
       <div class="merchbox cds" id="clickmodal1">
@@ -80,11 +82,11 @@
       <div class="merchbox cds">
       <img src="assets/images/merch/4_cd.png">
       </div>
-      <div class="merchbox cds">
+      <div class="merchbox cds outofstock">
       <img src="assets/images/merch/5_cd.png">
       </div>
       <div class="merchbox goodies">
-
+          <span class="grey-text text-lighten-1 formatted-huge italic">Goodies</span>
       </div>
       <div class="merchbox goodies">
       <img src="assets/images/merch/1_sh.png">
@@ -176,6 +178,10 @@ $(document).ready(function() {
   $('#mydropdown-goodies').on('click', function(){
     $(".goodies").removeClass("hide");
     $(".cds").addClass("hide");
+  });
+  $('#mydropdown-all').on('click', function(){
+    $(".goodies").removeClass("hide");
+    $(".cds").removeClass("hide");
   });
   $('#clickmodal1').on('click', function(){
     $('#modal1').toggleClass('hide');
