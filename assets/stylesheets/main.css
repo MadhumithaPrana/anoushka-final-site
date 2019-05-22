@@ -66,6 +66,10 @@ nav.li a:active {
   padding:20px;
 }
 
+.justified {
+    text-align: justify;
+}
+
 .italic {
   font-style: italic;
 }
