@@ -81,7 +81,9 @@ nav.li a:active {
 .albumreleased {
     float: right;
 }
-
+.card-content{
+    background-color: #0D0D0D;
+}
 .peachylight {
   background-color: #EAAEA3;
 }
@@ -133,6 +135,10 @@ nav.nav-font ul > li {
   font-size: 16px;
 }
 
+.dollar {
+  font-family: 'Libre Baskerville' , serif;
+  font-size: 20px;
+}
 .formatted-large {
   font-family: 'Libre Baskerville' , serif;
   font-size: 26px;

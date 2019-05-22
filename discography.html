@@ -174,11 +174,13 @@ $('.carousel').carousel({
 $(document).ready(function() {
   $('.left').on('click', function(){
     var currentIndex = $('.carousel').data('index');
+        var colors= ["#7B6635","#B6AAB1","#C7C5C6" ];
     for (var index = 0; index < 3; index = index + 1) {
       var id = 'album' + (index+1) + '-fm';
       if (index == currentIndex) {
         // show current album
         $('#' + id).removeClass("hide");
+          $('.disco-card').css('background',colors[index]);
       } else {
         // hide current album
         $('#' + id).addClass('hide');
@@ -188,11 +190,14 @@ $(document).ready(function() {
   });
   $('.right').on('click', function(){
     var currentIndex = $('.carousel').data('index');
+    var colors= ["#7B6635","#B6AAB1","#C7C5C6" ];
+
     for (var index = 0; index < 3; index = index + 1) {
       var id = 'album' + (index+1) + '-fm';
       if (index == currentIndex) {
         // show current album
         $('#' + id).removeClass("hide");
+        $('.disco-card').css('background',colors[index]);
       } else {
         // hide current album
         $('#' + id).addClass('hide');
