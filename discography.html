@@ -78,7 +78,7 @@
                         <span class="white-text">BUY PHYSICAL</span>
                     </div>
                     <div class="disco-card-item-2">
-                        <img src="assets/images/discography/arrow.png">
+                        <a href="https://amazon.com" target="_blank"  id="physical"><img src="assets/images/discography/arrow.png"></a>
                     </div>
                 </div>
                  <div class="disco-card">
@@ -86,39 +86,39 @@
                         <span class="white-text">BUY DIGITAL</span>
                     </div>
                     <div class="disco-card-item-2">
-                        <img src="assets/images/discography/arrow.png">
+                        <a href="https://amazon.com" target="_blank"  id="digital"><img src="assets/images/discography/arrow.png"></a>
                     </div>
                 </div>
                  <div class="disco-card">
                     <div class="disco-card-item-1">
-                        <span class="white-text">SPOTIFY</span>
+                        <span class="white-text">LISTEN ON SPOTIFY</span>
                     </div>
                     <div class="disco-card-item-2">
-                        <img src="assets/images/discography/arrow.png">
+                        <a href="https://spotify.com" target="_blank"  id="spotify"><img src="assets/images/discography/arrow.png"></a>
                     </div>
                 </div>
                  <div class="disco-card">
                     <div class="disco-card-item-1">
-                        <span class="white-text">APPLE MUSIC</span>
+                        <span class="white-text">LISTEN ON APPLE MUSIC</span>
                     </div>
                     <div class="disco-card-item-2">
-                        <img src="assets/images/discography/arrow.png">
+                        <a href="https://apple.com/music"  target="_blank" id="apple"><img src="assets/images/discography/arrow.png"></a>
                     </div>
                 </div>
                  <div class="disco-card">
                     <div class="disco-card-item-1">
-                        <span class="white-text">SOUND CLOUD</span>
+                        <span class="white-text">LISTEN ON SOUND CLOUD</span>
                     </div>
                     <div class="disco-card-item-2">
-                        <img src="assets/images/discography/arrow.png">
+                        <a href="https://soundcloud.com" target="_blank"  id="soundcloud"><img src="assets/images/discography/arrow.png"></a>
                     </div>
                 </div>
                   <div class="disco-card">
                     <div class="disco-card-item-1">
-                        <span class="white-text">YOUTUBE</span>
+                        <span class="white-text">LISTEN ON YOUTUBE</span>
                     </div>
                     <div class="disco-card-item-2">
-                        <img src="assets/images/discography/arrow.png">
+                        <a href="https://youtube.com" target="_blank" id="youtube"><img src="assets/images/discography/arrow.png"></a>
                     </div>
                 </div>
             </div>
@@ -171,24 +171,9 @@ $('.carousel').carousel({
 
 });
 
-$(document).ready(function() {
-  $('.left').on('click', function(){
-    var currentIndex = $('.carousel').data('index');
-        var colors= ["#7B6635","#B6AAB1","#C7C5C6" ];
-    for (var index = 0; index < 3; index = index + 1) {
-      var id = 'album' + (index+1) + '-fm';
-      if (index == currentIndex) {
-        // show current album
-        $('#' + id).removeClass("hide");
-          $('.disco-card').css('background',colors[index]);
-      } else {
-        // hide current album
-        $('#' + id).addClass('hide');
-      }
+var youtube_links = ["https://www.youtube.com/watch?v=To9PVjblff0&list=PLGjLVtehjLeV_z6twUDRKzDkJFhzYbXIV", "https://www.youtube.com/watch?v=AmChU4gsRJA&list=PLxUDwOfc-BQ5HJvPzdRBdQw0f26FJg_Gz", "https://www.youtube.com/watch?v=V6yMeJ1WxPg"]
 
-    }
-  });
-  $('.right').on('click', function(){
+function handleClick() {
     var currentIndex = $('.carousel').data('index');
     var colors= ["#7B6635","#B6AAB1","#C7C5C6" ];
 
@@ -197,14 +182,22 @@ $(document).ready(function() {
       if (index == currentIndex) {
         // show current album
         $('#' + id).removeClass("hide");
+        // Set cards color
         $('.disco-card').css('background',colors[index]);
+        // Set cards links
+        $('#youtube').attr('href', youtube_links[index]);
       } else {
         // hide current album
         $('#' + id).addClass('hide');
       }
 
     }
-  });
+}
+
+$(document).ready(function() {
+  $('#youtube').attr('href', youtube_links[0]);
+  $('.left').on('click', handleClick);
+  $('.right').on('click', handleClick);
 });
 
 
