@@ -83,7 +83,13 @@ nav.li a:active {
 }
 .card-content{
     background-color: #0D0D0D;
+    color: #DDD5A7;
 }
+.card-reveal{
+  background-color: #0D0D0D !important;
+  color: #DDD5A7;
+    }
+
 .peachylight {
   background-color: #EAAEA3;
 }
