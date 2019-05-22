@@ -173,8 +173,14 @@ $('.carousel').carousel({
   distance: 300
 
 });
+var physical = ["https://www.amazon.com/Land-Gold-Anoushka-Shankar/dp/B01AOOBZ8M/ref=sr_1_2?keywords=anoushka+shankar&qid=1558561299&s=gateway&sr=8-2","https://www.amazon.com/Reflections-Anoushka-Shankar/dp/B07KZGCNSH/ref=pd_sim_15_5/146-2624654-7578517?_encoding=UTF8&pd_rd_i=B07KZGCNSH&pd_rd_r=a859ef39-7ce2-11e9-b428-7d17b7108ea6&pd_rd_w=O7m90&pd_rd_wg=yJdmh&pf_rd_p=90485860-83e9-4fd9-b838-b28a9b7fda30&pf_rd_r=FVNDRDEV1S7A8PQ40VQY&psc=1&refRID=FVNDRDEV1S7A8PQ40VQY","https://www.amazon.com/Traces-You-Anoushka-Shankar/dp/B00DEFW998/ref=pd_bxgy_15_img_3/146-2624654-7578517?_encoding=UTF8&pd_rd_i=B00DEFW998&pd_rd_r=acc2a0c1-7ce2-11e9-b4c5-ef907af3647f&pd_rd_w=3Pwba&pd_rd_wg=khmcj&pf_rd_p=a2006322-0bc0-4db9-a08e-d168c18ce6f0&pf_rd_r=TPCMMVYXXKGJDSMM1XQ2&psc=1&refRID=TPCMMVYXXKGJDSMM1XQ2"]
+var digital = ["https://www.amazon.com/Land-Gold-Anoushka-Shankar/dp/B01CAYSOZG/ref=tmm_msc_swatch_0?_encoding=UTF8&qid=1558561299&sr=8-2","https://www.amazon.com/Reflections-Anoushka-Shankar/dp/B07NLCG4Q2/ref=pd_sim_340_5/146-2624654-7578517?_encoding=UTF8&pd_rd_i=B07NLCG4Q2&pd_rd_r=d0ce87ec-7ce2-11e9-ba98-0ff29dc49ff2&pd_rd_w=1dAny&pd_rd_wg=pMF9g&pf_rd_p=90485860-83e9-4fd9-b838-b28a9b7fda30&pf_rd_r=3V7ZMNQ08WDM3ABYRWM7&psc=1&refRID=3V7ZMNQ08WDM3ABYRWM7","https://www.amazon.com/Traces-You-Anoushka-Shankar/dp/B00FRCNNVY/ref=pd_sim_340_2/146-2624654-7578517?_encoding=UTF8&pd_rd_i=B00FRCNNVY&pd_rd_r=dda2fc4d-7ce2-11e9-aff7-7b8b27abc5ce&pd_rd_w=Kx3Bu&pd_rd_wg=1xHhL&pf_rd_p=90485860-83e9-4fd9-b838-b28a9b7fda30&pf_rd_r=D1P35933954AT2RG3Y5C&psc=1&refRID=D1P35933954AT2RG3Y5C"]
+var youtube_links = ["https://www.youtube.com/playlist?list=OLAK5uy_k0NjpSLOnt-DbcpPvIXbcKTSjCaqSkcss", "https://www.youtube.com/playlist?list=PLtPeiGAJhEX_IZa1KUOoPogRxSoLYLoq9", "https://www.youtube.com/playlist?list=PLxUDwOfc-BQ5HJvPzdRBdQw0f26FJg_Gz"]
+var spotify_links = ["https://open.spotify.com/album/4zPcbxBEKkZDEjsdbQoEJi", "https://open.spotify.com/album/1PLFjFH557aoApbm2t9OtZ?si=crCRzhPrTxuGvJz5M6dUtA", "https://open.spotify.com/album/3JhWoZyK2xTHTbwVXyaleq?si=NeHKRItqTRGNnoWSW08_Yw"]
+var applemusic_links = ["https://music.apple.com/us/album/land-of-gold/1440786568", "https://music.apple.com/us/album/reflections/1452232469", "https://music.apple.com/us/album/traces-of-you/679378334?i=679378444"]
+var soundcloud_links = ["https://soundcloud.com/anoushka-shankar/sets/land-of-gold-1", "https://soundcloud.com/anoushka-shankar/sets/reflections-139", "https://soundcloud.com/classicsandjazz/sets/anoushka-shankar-traces-of"]
 
-var youtube_links = ["https://www.youtube.com/watch?v=To9PVjblff0&list=PLGjLVtehjLeV_z6twUDRKzDkJFhzYbXIV", "https://www.youtube.com/watch?v=AmChU4gsRJA&list=PLxUDwOfc-BQ5HJvPzdRBdQw0f26FJg_Gz", "https://www.youtube.com/watch?v=V6yMeJ1WxPg"]
+
 
 function handleClick() {
     var currentIndex = $('.carousel').data('index');
