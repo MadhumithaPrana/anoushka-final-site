@@ -36,8 +36,9 @@
 <div class="mydropdown">
   <button class="dropbtn italic">Category</button>
   <div id="myDropdown" class="mydropdown-content">
-    <a href="#about" id="mydropdown-cds">CDs and Records (5)</a>
-    <a href="#base" id="mydropdown-goodies">Goodies (3)</a>
+    <a href="#cds" id="mydropdown-cds">CDs and Records (5)</a>
+    <a href="#goodies" id="mydropdown-goodies">Goodies (3)</a>
+    <a href="#all" id="mydropdown-all">Everything (8)</a>
   </div>
 </div>
 <br>
@@ -125,6 +126,10 @@ $(document).ready(function() {
   $('#mydropdown-goodies').on('click', function(){
     $(".goodies").removeClass("hide");
     $(".cds").addClass("hide");
+  });
+  $('#mydropdown-all').on('click', function(){
+    $(".goodies").removeClass("hide");
+    $(".cds").removeClass("hide");
   });
   $('#clickmodal1').on('click', function(){
     $('#modal1').toggleClass('hide');
