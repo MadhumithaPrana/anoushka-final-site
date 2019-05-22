@@ -149,6 +149,12 @@ nav.nav-font ul > li {
   font-size: 42px;
 }
 
+
+.formatted-btn {
+  font-family: 'Libre Baskerville' , serif;
+  font-size: 24px;
+}
+
 .imagegrid {
   display: grid;
   grid-gap: 20px;
@@ -175,13 +181,6 @@ background-color: #473607
 
 .disco-card-item-2 {
     align-self: right;
-}
-
-
-.card-small {
-  width: 500px;
-  height: 80px;
-background-color: #473607
 }
 
 .card-font {
@@ -356,8 +355,6 @@ time.icon span
   font-size: 16px;
   border: none;
   cursor: pointer;
-  font-family: 'Libre Baskerville' , serif;
-  font-size: 24px;
 }
 
 /* Dropdown button on hover & focus */
