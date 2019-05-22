@@ -52,9 +52,24 @@
       <div class="merchbox cds">
       </div>
 
-      <div class="merchbox cds">
-      <img src="assets/images/merch/1_cd.png">
+      <div class="merchbox cds" id="clickmodal1">
+        <a href="#modal1"><img src="assets/images/merch/1_cd.png"></a>
       </div>
+
+
+    <div class="card hide" id="modal1">
+        <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="assets/images/merch/1_cd.png">
+        </div>
+        <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Land of Gold<i class="material-icons right">Add to Cart</i></span>
+            <p><a href="#">$20</a></p>
+        </div>
+        <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Land of Gold<i class="material-icons right" id="modal1close">close</i></span>
+        </div>
+    </div>
+
       <div class="merchbox cds">
       <img src="assets/images/merch/2_cd.png">
       </div>
@@ -78,20 +93,6 @@
       </div>
       <div class="merchbox goodies">
       <img src="assets/images/merch/3_sh.png">
-      </div>
-    </div>
-
-    <div class="card">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="assets/images/merch/1_cd.png">
-        </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">Land of Gold<i class="material-icons right">Add to Cart</i></span>
-          <p><a href="#">$20</a></p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Land of Gold<i class="material-icons right">close</i></span>
-
       </div>
     </div>
 
@@ -123,6 +124,15 @@ $(document).ready(function() {
   $('#mydropdown-goodies').on('click', function(){
     $(".goodies").removeClass("hide");
     $(".cds").addClass("hide");
+  });
+  $('#clickmodal1').on('click', function(){
+    $('#modal1').toggleClass('hide');
+    $('#modal1').toggleClass('show');
+    console.log('modal1 on');
+  });
+  $('#modal1close').on('click', function(){
+    $('#modal1').toggleClass('hide');
+    $('#modal1').toggleClass('show');
   });
 });
 </script>
