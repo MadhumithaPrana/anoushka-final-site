@@ -314,8 +314,8 @@ time.icon span
   width:600px;
   height:500px;
   background-color: #070606;
-  justify-self: center;
   border: 1px solid white;
+  justify-self: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -351,8 +351,10 @@ time.icon span
 
 
 
-
-
+.topright span {
+    color: #444 !important;
+    font-size: 24px;
+}
 
 
 /* Dropdown Content (Hidden by Default) */
