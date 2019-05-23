@@ -47,6 +47,17 @@ body {background-color: black;}
   text-align: left;
 }
 
+
+.topright {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.black {
+    text-color: black !important;
+}
+
 .textfont {
   font-family: 'Libre Baskerville', serif;
   font-size: 16px;
@@ -316,7 +327,6 @@ time.icon span
   grid-column-gap: 0;
   grid-row-gap: 0;
 }
-
 
 .outofstock:after {
     content: 'Out of Stock';
