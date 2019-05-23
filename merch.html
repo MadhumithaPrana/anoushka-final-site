@@ -58,11 +58,11 @@
         <div class="card hide" id="modal1">
             <div class="card-image overlay">
                 <img class="activator" src="assets/images/merch/1_cd.png">
-                <a class="topright" href="#modal1" id="modal1close"><span>X</span></a>
+                <a class="topright modal1close" href="#modal1"><span>X</span></a>
             </div>
             <div class="card-content">
 
-                <span class="card-title activator formatted-medium"> Land of Gold <i class="material-icons right">Add to Cart</i></span>
+                <span class="card-title activator formatted-medium"> Land of Gold <i class="material-icons right modal1close">Add to Cart</i></span>
                 <p class="dollar">$20</p>
 
             </div>
@@ -80,10 +80,10 @@
         <div class="card hide" id="modal2">
             <div class="card-image overlay">
                 <img class="activator" src="assets/images/merch/2_cd.png">
-                <a class="topright" href="#modal2" id="modal2close"><span>X</span></a>
+                <a class="topright modal2close" href="#modal2"><span>X</span></a>
             </div>
             <div class="card-content">
-                <span class="card-title activator formatted-medium">VR 9 NOV<i class="material-icons right">Add to Cart</i></span>
+                <span class="card-title activator formatted-medium">VR 9 NOV<i class="material-icons right modal2close">Add to Cart</i></span>
                 <p class="dollar">$50</a></p>
             </div>
 
@@ -99,11 +99,11 @@
         <div class="card hide" id="modal3">
             <div class="card-image overlay">
                 <img class="activator" src="assets/images/merch/3_cd.png">
-                <a class="topright" href="#modal3" id="modal3close"><span>X</span></a>
+                <a class="topright modal3close" href="#modal3"><span>X</span></a>
             </div>
             <div class="card-content">
                     <span class="card-title activator formatted-medium">Traces of You<i
-                            class="material-icons right">Add to Cart</i></span>
+                            class="material-icons right modal3close">Add to Cart</i></span>
                 <p class="dollar">$50</a></p>
             </div>
         </div>
@@ -133,11 +133,11 @@
         <div class="card hide" id="modal4">
             <div class="card-image overlay">
                 <img class="activator" src="assets/images/merch/1_sh.png">
-                <a class="topright" href="#modal4" id="modal4close"><span>X</span></a>
+                <a class="topright modal4close" href="#modal4"><span>X</span></a>
             </div>
             <div class="card-content">
                         <span class="card-title activator formatted-medium">Land of Gold Shirt<i
-                                class="material-icons right">Add to Cart</i></span>
+                                class="material-icons right modal4close">Add to Cart</i></span>
                 <p class="dollar">$20</a></p>
             </div>
 
@@ -153,11 +153,11 @@
         <div class="card hide" id="modal5">
             <div class="card-image overlay">
                 <img class="activator" src="assets/images/merch/2_sh.png">
-                <a class="topright" href="#modal5" id="modal5close"><span>X</span></a>
+                <a class="topright modal5close" href="#modal5"><span>X</span></a>
             </div>
             <div class="card-content">
                             <span class="card-title activator formatted-medium">Anoushka T-shirt<i
-                                    class="material-icons right">Add to Cart</i></span>
+                                    class="material-icons right modal5close">Add to Cart</i></span>
                 <p class="dollar">$20</a></p>
             </div>
 
@@ -212,7 +212,7 @@ $(document).ready(function() {
         $('#modal1').toggleClass('hide');
         $('#modal1').toggleClass('show');
       });
-      $('#modal1close').on('click', function(){
+      $('.modal1close').on('click', function(){
         $('#modal1').toggleClass('hide');
         $('#modal1').toggleClass('show');
       });
@@ -222,7 +222,7 @@ $(document).ready(function() {
         $('#modal2').toggleClass('hide');
         $('#modal2').toggleClass('show');
       });
-      $('#modal2close').on('click', function(){
+      $('.modal2close').on('click', function(){
         $('#modal2').toggleClass('hide');
         $('#modal2').toggleClass('show');
       });
@@ -232,7 +232,7 @@ $(document).ready(function() {
         $('#modal3').toggleClass('hide');
         $('#modal3').toggleClass('show');
       });
-      $('#modal3close').on('click', function(){
+      $('.modal3close').on('click', function(){
         $('#modal3').toggleClass('hide');
         $('#modal3').toggleClass('show');
       });
@@ -242,7 +242,7 @@ $(document).ready(function() {
         $('#modal4').toggleClass('hide');
         $('#modal4').toggleClass('show');
       });
-      $('#modal4close').on('click', function(){
+      $('.modal4close').on('click', function(){
         $('#modal4').toggleClass('hide');
         $('#modal4').toggleClass('show');
       });
@@ -252,7 +252,7 @@ $(document).ready(function() {
         $('#modal5').toggleClass('hide');
         $('#modal5').toggleClass('show');
       });
-      $('#modal5close').on('click', function(){
+      $('.modal5close').on('click', function(){
         $('#modal5').toggleClass('hide');
         $('#modal5').toggleClass('show');
       });
