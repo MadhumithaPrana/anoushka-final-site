@@ -97,6 +97,11 @@ body {background-color: black;}
   padding:80px;
 }
 
+.peachytwo {
+  background-color: #E7A097;
+  padding:30px;
+}
+
 .sideys {
     display:flex;
     flex-direction: row;
